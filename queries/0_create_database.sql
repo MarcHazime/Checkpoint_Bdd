@@ -1,12 +1,12 @@
 CREATE TABLE Recruteur (
-	recruteur_id integer PRIMARY KEY AUTOINCREMENT,
+	id integer PRIMARY KEY AUTOINCREMENT,
 	login varchar,
 	mot_de_passe varchar,
 	entreprise_id integer
 );
 
 CREATE TABLE Candidat (
-	candidat_id integer PRIMARY KEY AUTOINCREMENT,
+	id integer PRIMARY KEY AUTOINCREMENT,
 	login varchar,
 	mot_de_passe varchar,
 	nom varchar,
@@ -17,13 +17,13 @@ CREATE TABLE Candidat (
 );
 
 CREATE TABLE Entreprise (
-	entreprise_id integer PRIMARY KEY AUTOINCREMENT,
+	id integer PRIMARY KEY AUTOINCREMENT,
 	nom varchar,
 	description varchar
 );
 
 CREATE TABLE Offre (
-	offre_id integer PRIMARY KEY AUTOINCREMENT,
+	id integer PRIMARY KEY AUTOINCREMENT,
 	titre_du_poste varchar,
 	descriptif_du_poste varchar,
 	ville_du_poste varchar,
@@ -31,7 +31,7 @@ CREATE TABLE Offre (
 );
 
 CREATE TABLE Candidature (
-	candidature_id integer PRIMARY KEY AUTOINCREMENT,
+	id integer PRIMARY KEY AUTOINCREMENT,
 	candidat_id integer,
 	offre_id integer
 );
