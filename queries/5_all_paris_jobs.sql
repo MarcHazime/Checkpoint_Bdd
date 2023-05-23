@@ -1,3 +1,3 @@
 SELECT *
-FROM Offre
-WHERE ville_du_poste = 'Paris';
+FROM Offer
+WHERE city = 'Paris';

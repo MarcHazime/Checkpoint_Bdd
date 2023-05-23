@@ -1,39 +1,39 @@
-CREATE TABLE Recruteur (
+CREATE TABLE Recruiter (
 	id integer PRIMARY KEY AUTOINCREMENT,
 	login varchar,
-	mot_de_passe varchar,
-	entreprise_id integer
+	password varchar,
+	company_id integer
 );
 
 CREATE TABLE Candidat (
 	id integer PRIMARY KEY AUTOINCREMENT,
 	login varchar,
-	mot_de_passe varchar,
-	nom varchar,
-	prénom varchar,
+	password varchar,
+	name varchar,
+	firstname varchar,
 	email varchar,
-	numéro_de_téléphone varchar,
-	texte_de_présentation varchar
+	phone varchar,
+	presentation varchar
 );
 
-CREATE TABLE Entreprise (
+CREATE TABLE Company (
 	id integer PRIMARY KEY AUTOINCREMENT,
-	nom varchar,
+	name varchar,
 	description varchar
 );
 
-CREATE TABLE Offre (
+CREATE TABLE Offer (
 	id integer PRIMARY KEY AUTOINCREMENT,
-	titre_du_poste varchar,
-	descriptif_du_poste varchar,
-	ville_du_poste varchar,
-	entreprise_id integer
+	job_title varchar,
+	job_description varchar,
+	city varchar,
+	company_id integer
 );
 
-CREATE TABLE Candidature (
+CREATE TABLE Applies (
 	id integer PRIMARY KEY AUTOINCREMENT,
 	candidat_id integer,
-	offre_id integer
+	offer_id integer
 );
 
 

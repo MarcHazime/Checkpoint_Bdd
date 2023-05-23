@@ -1,1 +1,1 @@
-SELECT * FROM Offre
+SELECT * FROM Offer
